@@ -5,32 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flipped Robotics Mini-Competition</title>
     <style>
-        body {
+        body, html {
+            height: 100%;
+            margin: 0;
             font-family: Arial, sans-serif;
-            line-height: 1.6;
             color: #333;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
             background-color: #f4f4f4;
+        }
+        .container {
+            display: flex;
+            height: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 10px;
+        }
+        .column {
+            flex: 1;
+            padding: 10px;
+            overflow-y: auto;
         }
         h1, h2 {
             color: #e44d26;
+            margin-top: 0;
         }
         .highlight {
             background-color: #ffe6e6;
             padding: 10px;
             border-radius: 5px;
-            margin-bottom: 20px;
-        }
-        .container {
-            display: flex;
-            justify-content: space-between;
-            margin-bottom: 20px;
-        }
-        .column {
-            flex: 1;
-            padding: 10px;
+            margin-bottom: 10px;
         }
         img {
             max-width: 100%;
@@ -38,56 +40,52 @@
             border-radius: 5px;
             margin-bottom: 10px;
         }
+        ul {
+            padding-left: 20px;
+        }
     </style>
 </head>
 <body>
-
-<h1>Flipped Robotics Mini-Competition</h1>
-
-<div class="highlight">
-    <p>Get ready for an exciting robotics competition! It's time to put your robots into action and score some points!</p>
-</div>
-
 <div class="container">
     <div class="column">
+        <h1>Flipped Robotics Mini-Competition</h1>
+        <div class="highlight">
+            <p>Get ready for an exciting robotics competition! Put your robots into action and score points!</p>
+        </div>
         <h2>Updated Rules</h2>
-
         <h3>Scoring:</h3>
         <ul>
             <li>Rings on Stakes: 5 points each</li>
             <li>Top Ring on Stake: 10 points</li>
-            <li>Rings in Positive Corner Zone: 2 points each</li>
-            <li>Rings in Negative Corner Zone: -1 point each</li>
+            <li>Rings in Positive Corner: 2 points each</li>
+            <li>Rings in Negative Corner: -1 point each</li>
         </ul>
-
         <h3>Special Rules:</h3>
         <ul>
-            <li>Removing opponent's rings from a zone is allowed and encouraged!</li>
+            <li>Removing opponent's rings is encouraged!</li>
             <li>First to score gets an extra point per ring.</li>
-            <!--li>Bonus: If your robot can climb the ladder while holding a ring, you get 20 bonus points!</li-->
+            <li>Climb ladder with a ring: 20 bonus points!</li>
+        </ul>
+        <h2>Prizes</h2>
+        <ul>
+            <li>VEX component vouchers</li>
+            <li>Pizza party for your team</li>
+            <li>"Competition Champion" trophy</li>
         </ul>
     </div>
     <div class="column">
         <img src="https://www.vexrobotics.com/media/catalog/product/cache/d64bdfbef0647162ce6500508b5b84f8/2/7/276-8869_1.jpg" alt="VEX Robotics Competition Field">
+        <img src="https://www.roboticsbusinessreview.com/wp-content/uploads/2020/03/VEX-Robotics-Competition-1.jpg" alt="Robot with Rings">
+        <div class="highlight">
+            <p>Gear up, power on, and may the best bot win! Show your skills and claim victory!</p>
+        </div>
+        <h2>Remember</h2>
+        <ul>
+            <li>Every challenge is a learning opportunity</li>
+            <li>Teamwork makes the dream work</li>
+            <li>Participating makes you all winners!</li>
+        </ul>
     </div>
 </div>
-
-<h2>Prizes</h2>
-<p>Remember, there are great prizes up for grabs! The winning team gets the coveted "Competition Champion" trophy
-
-<h2>Motivation</h2>
-<p>This is your chance to shine! Show off your robot-building skills, outsmart your opponents, and claim victory in the competition! Remember:</p>
-<ul>
-    <li>Every challenge is an opportunity to learn and grow</li>
-    <li>Teamwork makes the dream work</li>
-    <li>Win or lose, you're all winners for participating (but winning is pretty great too!)</li>
-</ul>
-
-<div class="highlight">
-    <p>So, gear up, power on, and may the best bot win! Let's make this competition one to remember!</p>
-</div>
-
-<img src="https://content.vexrobotics.com/vexedr/pdf/VEX-V5-UserGuide-20180712.jpg" alt="VEX V5 Robot">
-
 </body>
 </html>
