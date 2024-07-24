@@ -17,37 +17,46 @@
             height: 100%;
             max-width: 1200px;
             margin: 0 auto;
-            padding: 10px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            background-color: white;
         }
         .column {
             flex: 1;
-            padding: 10px;
+            padding: 20px;
             overflow-y: auto;
         }
         h1, h2 {
-            color: #e44d26;
+            color: #0066cc;
             margin-top: 0;
         }
         .highlight {
-            background-color: #ffe6e6;
-            padding: 10px;
+            background-color: #e6f2ff;
+            padding: 15px;
             border-radius: 5px;
-            margin-bottom: 10px;
+            margin-bottom: 20px;
+            border-left: 5px solid #0066cc;
         }
         img {
             max-width: 100%;
             height: auto;
             border-radius: 5px;
-            margin-bottom: 10px;
+            margin-bottom: 20px;
+            box-shadow: 0 0 5px rgba(0,0,0,0.2);
         }
         ul {
             padding-left: 20px;
+        }
+        .logo {
+            max-width: 150px;
+            margin-bottom: 20px;
         }
     </style>
 </head>
 <body>
 <div class="container">
     <div class="column">
+        <img src="image1.png" alt="VEX Robotics Logo" class="logo">
         <h1>Flipped Robotics Mini-Competition</h1>
         <div class="highlight">
             <p>Get ready for an exciting robotics competition! Put your robots into action and score points!</p>
@@ -64,7 +73,6 @@
         <ul>
             <li>Removing opponent's rings is encouraged!</li>
             <li>First to score gets an extra point per ring.</li>
-            <!-- <li>Climb ladder with a ring: 20 bonus points!</li> -->
         </ul>
         <h2>Prize</h2>
         <ul>
@@ -72,7 +80,7 @@
         </ul>
     </div>
     <div class="column">
-        <img src="https://www.vexrobotics.com/media/catalog/product/cache/d64bdfbef0647162ce6500508b5b84f8/2/7/276-8869_1.jpg" alt="VEX Robotics Competition Field">
+        <img src="image2.png" alt="VEX Robot with Rings">
         <div class="highlight">
             <p>Gear up, power on, and may the best bot win! Show your skills and claim victory!</p>
         </div>
@@ -82,6 +90,7 @@
             <li>Teamwork makes the dream work</li>
             <li>Participating makes you all winners!</li>
         </ul>
+        <img src="image3.png" alt="VEX Robotics Competition Field">
     </div>
 </div>
 </body>
