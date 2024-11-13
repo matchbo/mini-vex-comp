@@ -6,7 +6,7 @@
     <title>Flipped Robotics Mini-Competition</title>
     <style>
         body, html {
-            height: 100%;
+            height: 100vh;
             margin: 0;
             font-family: Arial, sans-serif;
             color: #333;
@@ -14,50 +14,119 @@
         }
         .container {
             display: flex;
-            height: 100%;
+            height: calc(100vh - 100px); /* Account for nav bars */
             max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
+            margin: 40px auto 50px auto;
+            padding: 15px;
             box-shadow: 0 0 10px rgba(0,0,0,0.1);
             background-color: white;
         }
+
         .column {
             flex: 1;
-            padding: 20px;
-            overflow-y: auto;
+            padding: 15px;
+            overflow-y: auto; /* Allow scrolling if content is too long */
+            max-height: calc(100vh - 120px);
         }
-        h1, h2 {
+        h1 {
             color: #0066cc;
             margin-top: 0;
+            font-size: 1.8em;
+            margin-bottom: 10px;
+        }
+        h2 {
+            color: #0066cc;
+            margin-top: 0;
+            font-size: 1.4em;
+            margin-bottom: 8px;
+        }
+        h3 {
+            font-size: 1.1em;
+            margin: 8px 0;
         }
         .highlight {
             background-color: #e6f2ff;
-            padding: 15px;
+            padding: 10px;
             border-radius: 5px;
-            margin-bottom: 20px;
+            margin-bottom: 15px;
             border-left: 5px solid #0066cc;
         }
         img {
             max-width: 100%;
             height: auto;
             border-radius: 5px;
-            margin-bottom: 20px;
+            margin-bottom: 15px;
             box-shadow: 0 0 5px rgba(0,0,0,0.2);
         }
         ul {
             padding-left: 20px;
+            margin: 8px 0;
+        }
+        li {
+            margin-bottom: 4px;
         }
         .logo {
-            width: 450px;
-            height: 250px;
+            width: 300px;
+            height: 150px;
             object-fit: cover;
             object-position: left;
-            margin-bottom: 20px;
+            margin-bottom: 15px;
+        }
+        .field-image {
+            max-width: 100%;
+            height: 300px;
+            object-fit: contain;
+            margin: 10px 0;
+        }
+        .nav-bar {
+            background-color: #0066cc;
+            color: white;
+            text-align: center;
+            padding: 8px;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 100;
+        }
+
+        .bottom-nav {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background-color: #f4f4f4;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .switch-button {
+            background-color: #0066cc;
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 1em;
+        }
+
+        .switch-button:hover {
+            background-color: #0052a3;
+        }
+
+        /* Adjust container to account for nav bars */
+        .container {
+            margin-top: 40px;
+            margin-bottom: 50px;
+        }
+        p {
+            margin: 8px 0;
         }
     </style>
-</head>
-<body>
-<div class="container">
+    </head>
+    <body>
+    <div class="nav-bar">
+        VEX IQ Competition Rules
+    </div>
+    <div class="container">
     <div class="column">
         <img src="vex-logo.png" alt="VEX Robotics Logo" class="logo">
         <h1>Flipped Robotics Mini-Competition</h1>
@@ -80,7 +149,7 @@
         </ul>
     </div>
     <div class="column">
-        <img src="image4.jpeg" alt="VEX Robotics Competition Field">
+        <img src="image4.jpeg" alt="VEX Robotics Competition Field" class="field-image">
         <div class="highlight">
             <p>Gear up, power on, and may the best bot win! Show your skills and claim victory!</p>
         </div>
@@ -88,9 +157,14 @@
         <ul>
             <li>Every challenge is a learning opportunity</li>
             <li>Teamwork makes the dream work</li>
-            <li>Participating makes you all winners!</li>
+                <li>Participating makes you all winners!</li>
         </ul>
     </div>
+</div>
+<div class="bottom-nav">
+    <button class="switch-button" onclick="window.location.href='index.html'">
+        Switch to VEX v5 Rules
+    </button>
 </div>
 </body>
 </html>
